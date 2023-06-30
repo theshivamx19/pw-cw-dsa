@@ -14,29 +14,29 @@
 // -------------------> Solution <-----------------------
 
 // let threeSumClosest = function(nums, target) {
-//     nums.sort((a, b) => a - b); 
-//     let closestSum = Infinity;
+//     nums.sort((a, b) => a - b)
+//     let closestSum = Infinity
 
 //     for (let i = 0; i < nums.length - 2; i++) {
-//         let l = i + 1, r = nums.length - 1;
+//         let l = i + 1, r = nums.length - 1
 //         while (l < r) {
-//             const currSum = nums[i] + nums[l] + nums[r];
+//             const currSum = nums[i] + nums[l] + nums[r]
 //             if (currSum === target) {
-//                 return target;
+//                 return target
 //             }
 //             if (Math.abs(currSum - target) < Math.abs(closestSum - target)) {
-//                 closestSum = currSum;
+//                 closestSum = currSum
 //             }
 //             if (currSum > target) {
-//                 r--;
+//                 r--
 //             } else {
-//                 l++;
+//                 l++
 //             }
 //         }
 //     }
     
-//     return closestSum;
-// };
+//     return closestSum
+// }
 
 
 // Question 4
@@ -53,21 +53,21 @@
 // -------------------> Solution <-----------------------
 
 // let searchInsert = function(nums, target) {
-//     let i = 0, j = nums.length - 1;
+//     let i = 0, j = nums.length - 1
     
 //     while (i <= j) {
-//       const mid = Math.floor((i + j) / 2);
+//       const mid = Math.floor((i + j) / 2)
       
 //       if (nums[mid] === target) {
-//         return mid;
+//         return mid
 //       } else if (nums[mid] < target) {
-//         i = mid + 1;
+//         i = mid + 1
 //       } else {
-//         j = mid - 1;
+//         j = mid - 1
 //       }
 //     }
     
-//     return i;
+//     return i
 //   };
 
 {/* <aside>
@@ -93,18 +93,18 @@ Thus, the result should be [1,2,4].
 
 
 // let plusOne = function(digits) {
-//     let n = digits.length;
+//     let n = digits.length
 //     for (let i = n - 1; i >= 0; i--) {
 //       if (digits[i] < 9) {
-//         digits[i]++;
-//         return digits;
+//         digits[i]++
+//         return digits
 //       } else {
-//         digits[i] = 0;
+//         digits[i] = 0
 //       }
 //     }
-//     digits.unshift(1);
-//     return digits;
-//   };
+//     digits.unshift(1)
+//     return digits
+//   }
   
 
 // Question 6
@@ -122,11 +122,11 @@ Thus, the result should be [1,2,4].
 
 
 // const singleNumber = function(nums) {
-//     let res = 0;
+//     let res = 0
 //     for (let i = 0; i < nums.length; i++) {
-//       res ^= nums[i];
+//       res ^= nums[i]
 //     }
-//     return res;
+//     return res
 //   };
 
     
